@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "src\GUI\GUI.csproj", "{644F745A-8749-43F7-AB4F-87D5DADE85F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{CB95DA72-F419-4FB7-911B-82D023A9A2DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{EC4AE250-4693-4FB6-B9CA-7D8B86FF0943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess\DataAccess.csproj", "{A3C7089F-C602-4874-9AB5-CF5E0B8242DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Tests", "DataAccess\DataAccess.Tests\DataAccess.Tests.csproj", "{24A2279B-C336-4891-BD19-C6894E7E9A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Domain", "DataAccess\DataAccess.Domain\DataAccess.Domain.csproj", "{4C5893F9-1AE2-4A9F-ACE7-C8186D4AF7BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{EDE2B2F5-013C-4A30-8140-495F535A6A7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "tst\UnitTests\UnitTests.csproj", "{2395407C-1736-45F4-9F2A-BDA20AC5CB78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{644F745A-8749-43F7-AB4F-87D5DADE85F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644F745A-8749-43F7-AB4F-87D5DADE85F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644F745A-8749-43F7-AB4F-87D5DADE85F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644F745A-8749-43F7-AB4F-87D5DADE85F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB95DA72-F419-4FB7-911B-82D023A9A2DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB95DA72-F419-4FB7-911B-82D023A9A2DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB95DA72-F419-4FB7-911B-82D023A9A2DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB95DA72-F419-4FB7-911B-82D023A9A2DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C7089F-C602-4874-9AB5-CF5E0B8242DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C7089F-C602-4874-9AB5-CF5E0B8242DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C7089F-C602-4874-9AB5-CF5E0B8242DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C7089F-C602-4874-9AB5-CF5E0B8242DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24A2279B-C336-4891-BD19-C6894E7E9A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24A2279B-C336-4891-BD19-C6894E7E9A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24A2279B-C336-4891-BD19-C6894E7E9A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24A2279B-C336-4891-BD19-C6894E7E9A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C5893F9-1AE2-4A9F-ACE7-C8186D4AF7BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C5893F9-1AE2-4A9F-ACE7-C8186D4AF7BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C5893F9-1AE2-4A9F-ACE7-C8186D4AF7BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C5893F9-1AE2-4A9F-ACE7-C8186D4AF7BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE2B2F5-013C-4A30-8140-495F535A6A7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE2B2F5-013C-4A30-8140-495F535A6A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE2B2F5-013C-4A30-8140-495F535A6A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE2B2F5-013C-4A30-8140-495F535A6A7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2395407C-1736-45F4-9F2A-BDA20AC5CB78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2395407C-1736-45F4-9F2A-BDA20AC5CB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2395407C-1736-45F4-9F2A-BDA20AC5CB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2395407C-1736-45F4-9F2A-BDA20AC5CB78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A3C7089F-C602-4874-9AB5-CF5E0B8242DF} = {EC4AE250-4693-4FB6-B9CA-7D8B86FF0943}
+		{24A2279B-C336-4891-BD19-C6894E7E9A00} = {EC4AE250-4693-4FB6-B9CA-7D8B86FF0943}
+		{4C5893F9-1AE2-4A9F-ACE7-C8186D4AF7BB} = {EC4AE250-4693-4FB6-B9CA-7D8B86FF0943}
+	EndGlobalSection
+EndGlobal
