@@ -14,12 +14,18 @@ namespace Domain
         public void Substract(float amountToSubstract)
         {
             var newBalance = Balance - amountToSubstract;
-            if (newBalance < 0)
+            if (IsCardInvalid(amountToSubstract))
             {
                 throw new Exception();
             }
             Balance = Balance - amountToSubstract;
             
+        }
+
+        private  bool IsCardInvalid(float am)
+        {
+            var newBalance = Balance - am;
+            return newBalance < 0;
         }
     }
 }

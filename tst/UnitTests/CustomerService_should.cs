@@ -17,7 +17,7 @@ namespace UnitTests
             //// Arrange
             var mockCustomerSignOn = new Mock<ISuperCustomerSignOn>();
             CustomerDto nullCustomer = null;
-            mockCustomerSignOn.Setup(mock => mock.GetSignedOnCustomer(false)).Returns(nullCustomer);
+            mockCustomerSignOn.Setup(mock => mock.GetSignedOnCustomer(It.IsAny<bool>())).Returns(nullCustomer);
             var sut = new CustomerService(mockCustomerSignOn.Object);
 
             //// Act
@@ -31,7 +31,7 @@ namespace UnitTests
         public void return_valids_customer_when_a_customer_is_signed_on()
         {
             var mockCustomerSignOn = new Mock<ISuperCustomerSignOn>();
-            mockCustomerSignOn.Setup(mock => mock.GetSignedOnCustomer(false)).Returns(new CustomerDto(Guid.NewGuid(), 10));
+            mockCustomerSignOn.Setup(mock => mock.GetSignedOnCustomer(It.IsAny<bool>())).Returns(new CustomerDto(Guid.NewGuid(), 10));
             //// Arrange
             var sut = new CustomerService(mockCustomerSignOn.Object);
 

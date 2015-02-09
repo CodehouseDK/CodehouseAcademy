@@ -48,6 +48,7 @@ namespace GUI
                     Console.WriteLine(cardResult.Amount);
                     return;
                 }
+
                 var cashPAymentMethod = new CashPaymentMethod(1000);
                 var cashResult = cashPaymentServices.Pay(payment, cashPAymentMethod);
                 Console.WriteLine(cashResult.Amount);
